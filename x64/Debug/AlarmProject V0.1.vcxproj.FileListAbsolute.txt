@@ -1,0 +1,19 @@
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\AlarmProject V0.1.vcxproj.CopyComplete
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\AlarmProject V0.1.exe
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\sfml-graphics-d-2.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\sfml-window-d-2.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\sfml-system-d-2.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\freetyped.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\zlibd1.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\bz2d.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\libpng16d.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\brotlidec.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\brotlicommon.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\sfml-audio-d-2.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\OpenAL32.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\vorbisenc.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\vorbis.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\ogg.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\vorbisfile.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\FLAC.dll
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\tgui-d.dll
