@@ -4,6 +4,7 @@
 
 
 #include "HashAlarm.h" 
+#include "AlarmNode.h"
 
 class ScreenHandler
 {
@@ -20,5 +21,6 @@ public:
 	int getScreenState();
 	void setScreenState(tgui::GuiSFML &gui, int screenState);
 	void createSideBar(sf::RenderWindow &win, tgui::GuiSFML& gui);
+	void GenerateAlarmNode(tgui::GuiSFML& gui, HashAlarm Hmap);
 };
 

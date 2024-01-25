@@ -156,7 +156,7 @@ bool ActivatableClock::isTimeToRing() ////OverLoad Function to ignore seconds
 
 long ActivatableClock::hash()
 {
-	return (long)ringtone.getPitch() * (long)userTime_tm.tm_hour + (long)userTime_tm.tm_min + stoll(ClockLabel) ;
+	return (long)ringtone.getPitch() * (long)userTime_tm.tm_hour + (long)userTime_tm.tm_min /* + stoll(ClockLabel)*/;
 }
 
 bool ActivatableClock::getringtoneActive()

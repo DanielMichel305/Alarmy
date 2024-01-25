@@ -7,6 +7,23 @@ void AlarmClock::setDaysToRing(int arr[])
 	std::cout << "Days To Ring: " << daysToRing[i] << '\n';
 }
 
+AlarmClock::AlarmClock()
+{
+}
+
+AlarmClock::AlarmClock(const AlarmClock& copyClock)
+{
+	this->setHours = copyClock.setHours;
+	this->setMinutes = copyClock.setMinutes;
+	this->setSeconds = copyClock.setSeconds;
+	//this->ClockLabel = copyClock.ClockLabel;
+	this->userTime_tm = copyClock.userTime_tm;
+	this->ringtoneBuffer = copyClock.ringtoneBuffer;
+	this->ringtone = copyClock.ringtone;
+	this->ringtoneActive = copyClock.ringtoneActive;
+	this->daysToRing = copyClock.daysToRing;
+}
+
 int*  AlarmClock::getDaysToRing()
 {
 	return daysToRing;

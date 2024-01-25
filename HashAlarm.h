@@ -50,12 +50,13 @@ private:
 public:
 
 	int id;
-	static Unit table[HASH_TABLE_SIZE];   ////changed this to static?
+	Unit table[HASH_TABLE_SIZE];   ////changed this to static?
 
 	HashAlarm();
 	void insertQuadratic(long index, AlarmClock &alarm);
 	void removeQuadratic(long index, AlarmClock alarm);
 	Unit& getElementIterator(int index);
+	std::vector<Unit> getAllAlarms();
 	int numberOfAlarms();
 	short getCapacity();
 	

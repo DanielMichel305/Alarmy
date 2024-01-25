@@ -27,7 +27,7 @@ void ScreenHandler::setScreenState(tgui::GuiSFML& gui, int screenState)
         ScreenState = 1;
 		std::cout << "Alarm Screen \n";
 
-		HashAlarm
+		
 
 
 
@@ -104,5 +104,26 @@ void ScreenHandler::createSideBar(sf::RenderWindow &win,tgui::GuiSFML& gui)
 	sideBarPanel->add(TimerButton);
 	sideBarPanel->add(stopwatchButton);
 	gui.add(sideBarPanel);
+}
+
+void ScreenHandler::GenerateAlarmNode(tgui::GuiSFML& gui, HashAlarm Hmap)
+{
+	
+	for (int i = 0; i < Hmap.getAllAlarms().size(); i++) {
+
+		//std::shared_ptr<AlarmNode> alarm = AlarmNode(Hmap.getAllAlarms().at(i).clock);
+
+		std::shared_ptr<AlarmNode> alarm;
+		std::cout << Hmap.getAllAlarms().at(i).clock.getDaysToRing()[3];
+		alarm->setbackendAlarmClock(Hmap.getAllAlarms().at(i).clock);
+
+		
+		 //alarm = AlarmNode(Hmap.getAllAlarms().at(i).clock);
+		std::cout << "AlarmNode Generated\n";
+		alarm->setPosition(350, i * 50);
+		
+		gui.add(alarm);
+	}
+	
 }
 

@@ -60,7 +60,7 @@ AlarmNode::AlarmNode()
 }
 
 AlarmNode::AlarmNode(AlarmClock clockObj){
-	this->backendAlarmClock = clockObj;
+	this->backendAlarmClock = &clockObj;
 
 	AlarmNode();
 
@@ -96,12 +96,15 @@ void AlarmNode::UIAlarmActivate(bool status)
 
 }
 
-AlarmClock AlarmNode::getbeckendAlarmClock()
+AlarmClock* AlarmNode::getbeckendAlarmClock()
 {
 		return backendAlarmClock;
 }
 
-void AlarmNode::setbackendAlarmClock(AlarmClock clockObj)
+void AlarmNode::setbackendAlarmClock(AlarmClock* clockObj)
 {
-	this->backendAlarmClock = clockObj;
+	
+	std::cout << clockObj->to_json(*clockObj) << "\n";
+		this->backendAlarmClock = clockObj;
+		std::cout << backendAlarmClock->to_json(*backendAlarmClock) << "\n";
 }

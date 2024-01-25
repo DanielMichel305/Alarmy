@@ -13,7 +13,7 @@ private:
 	tgui::TextArea::Ptr clockDescriptionLabel;
 	tgui::CheckBox::Ptr dayCheckBox[7];
 
-	AlarmClock backendAlarmClock;
+	AlarmClock* backendAlarmClock = new AlarmClock();
 
 public:
 	AlarmNode();
@@ -25,8 +25,8 @@ public:
 	bool isAlarmActivated();
 	void UIAlarmActivate(bool status);
 
-	AlarmClock getbeckendAlarmClock();
-	void setbackendAlarmClock(AlarmClock clockObj);
+	AlarmClock* getbeckendAlarmClock();
+	void setbackendAlarmClock(AlarmClock* clockObj);
 
 };
 

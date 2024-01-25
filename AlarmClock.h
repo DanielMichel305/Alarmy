@@ -12,8 +12,8 @@ private:
 	
 
 public:
-
-
+	AlarmClock();
+	AlarmClock(const AlarmClock& copyClock);
 	int* getDaysToRing();
 	void setDaysToRing(int arr[]);
 	bool isTodayOnList();

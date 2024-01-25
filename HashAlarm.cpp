@@ -74,6 +74,19 @@ HashAlarm::Unit& HashAlarm::getElementIterator(int index)
 	return table[index];
 }
 
+std::vector<HashAlarm::Unit> HashAlarm::getAllAlarms()
+{
+	std::vector<Unit> alarms;
+	for (int i = 0; i < getCapacity(); i++) {
+		if (getElementIterator(i).status != -1) {
+			alarms.push_back(getElementIterator(i));
+		}
+	}
+	return alarms;
+}
+
+
+
 
 int HashAlarm::numberOfAlarms()
 {
