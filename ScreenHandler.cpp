@@ -37,7 +37,10 @@ void ScreenHandler::setScreenState(tgui::GuiSFML& gui, int screenState)
        ScreenState = 2;
 	   std::cout << "Timer Screen \n";
 
-	  
+	   for (int i = 120; i > 0; i--) {
+
+		
+	   }
 
 
     }
@@ -135,6 +138,27 @@ void ScreenHandler::GenerateAlarmNode(tgui::GuiSFML& gui, HashAlarm Hmap)
 
 sf::RectangleShape ScreenHandler::updateTimerFill(long remainingSeconds)
 {
+	int progress = remainingSeconds / 100;
+	int backgroundHeight = 762 * progress;  ///Replace 762 by screen Height according to screen;
+
+	sf::RectangleShape backgroundFill;
+	backgroundFill.setFillColor(sf::Color(52,64,75));
+	backgroundFill.setSize(sf::Vector2f(2000, backgroundHeight));   //////DIRTY CODE: Figure out a way to get screen width, this is Crap.
+
+	return backgroundFill;
 	
 }
 
+
+
+
+
+
+////Whith your Feet on the Air 
+////And you head on the Ground
+////Try this trick and spin it
+////Your Head Will Colapse if there is nothing in it 
+////And You'll ask yourself... 
+////Where is My Mind
+////Where is My Mind 
+////Where is My Mind......
