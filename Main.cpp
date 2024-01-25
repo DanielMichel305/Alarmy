@@ -4,7 +4,7 @@
 #include "AlarmNode.h"
 #include "ScreenHandler.h"
 	
-/////FIX POINTER SHITSHOW IN ALARM NODE AND SCREEN HANDLE!!!!
+
 
 
 int main() {
@@ -42,8 +42,10 @@ int main() {
 	int arr[] = { 0,1,2,3,4,5,6 };
 	alarm1.setDaysToRing(arr);
 	
+	
 	AlarmClock alarm2;
 	alarm2.setAlarmTime(17, 10, 0);
+	alarm2.setDaysToRing(arr);
 
 	hmap.insertQuadratic(alarm1.hash()%hmap.getCapacity(), alarm1);
 	hmap.insertQuadratic(alarm2.hash() % hmap.getCapacity(), alarm2);

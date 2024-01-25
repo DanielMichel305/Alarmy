@@ -36,6 +36,10 @@ void ScreenHandler::setScreenState(tgui::GuiSFML& gui, int screenState)
         ///Render Timer Screen
        ScreenState = 2;
 	   std::cout << "Timer Screen \n";
+
+	  
+
+
     }
     else if (screenState == 3) {
         ///Render Stopwatch Screen
@@ -108,22 +112,29 @@ void ScreenHandler::createSideBar(sf::RenderWindow &win,tgui::GuiSFML& gui)
 
 void ScreenHandler::GenerateAlarmNode(tgui::GuiSFML& gui, HashAlarm Hmap)
 {
-	
+	int nodesRows=1, nodesCol=1;
 	for (int i = 0; i < Hmap.getAllAlarms().size(); i++) {
 
-		//std::shared_ptr<AlarmNode> alarm = AlarmNode(Hmap.getAllAlarms().at(i).clock);
-
-		std::shared_ptr<AlarmNode> alarm;
-		std::cout << Hmap.getAllAlarms().at(i).clock.getDaysToRing()[3];
-		alarm->setbackendAlarmClock(Hmap.getAllAlarms().at(i).clock);
-
+		std::shared_ptr<AlarmNode> alarm = std::make_shared<AlarmNode>();;
 		
-		 //alarm = AlarmNode(Hmap.getAllAlarms().at(i).clock);
+		alarm->setbackendAlarmClock(&Hmap.getAllAlarms().at(i).clock);
+	
 		std::cout << "AlarmNode Generated\n";
-		alarm->setPosition(350, i * 50);
+		alarm->setPosition(nodesCol*300, nodesRows * 50);		///REDO GRID RENDERING
 		
 		gui.add(alarm);
+		nodesCol++;
+		if (nodesCol > 4) {
+			nodesRows++;
+			nodesCol = 1;
+		}
+		
 	}
+	
+}
+
+sf::RectangleShape ScreenHandler::updateTimerFill(long remainingSeconds)
+{
 	
 }
 

@@ -105,6 +105,6 @@ void AlarmNode::setbackendAlarmClock(AlarmClock* clockObj)
 {
 	
 	std::cout << clockObj->to_json(*clockObj) << "\n";
-		this->backendAlarmClock = clockObj;
+		backendAlarmClock = clockObj;
 		std::cout << backendAlarmClock->to_json(*backendAlarmClock) << "\n";
 }

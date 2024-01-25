@@ -4,6 +4,8 @@ ToggleSwitch::ToggleSwitch()
 {
 	setSize(30, 15);
 	getRenderer()->setRoundedBorderRadius(999);
+	getRenderer()->setBackgroundColor(backgroundColorEnabled);
+
 
 	toggle = tgui::RadioButton::create();
 	toggle->setChecked(true);

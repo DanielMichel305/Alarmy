@@ -22,5 +22,6 @@ public:
 	void setScreenState(tgui::GuiSFML &gui, int screenState);
 	void createSideBar(sf::RenderWindow &win, tgui::GuiSFML& gui);
 	void GenerateAlarmNode(tgui::GuiSFML& gui, HashAlarm Hmap);
+	sf::RectangleShape updateTimerFill(long remainingSeconds);
 };
 

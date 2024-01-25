@@ -1,6 +1,5 @@
-﻿  AlarmNode.cpp
-  Main.cpp
-D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(19,64): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+﻿  Main.cpp
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(21,64): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=unsigned int
@@ -9,7 +8,7 @@ D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(19,64): 
           [
               T=float
           ]
-D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(19,47): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(21,47): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=unsigned int
@@ -18,7 +17,7 @@ D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(19,47): 
           [
               T=float
           ]
-D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(25,70): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(27,70): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=unsigned int
@@ -27,14 +26,13 @@ D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(25,70): 
           [
               T=float
           ]
-D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(25,50): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(27,50): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
           with
           [
               T=float
           ]
-  ScreenHandler.cpp
-D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\ScreenHandler.cpp(118,62): error C2664: 'void AlarmNode::setbackendAlarmClock(AlarmClock *)': cannot convert argument 1 from 'AlarmClock' to 'AlarmClock *'
-D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\ScreenHandler.cpp(118,56): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\AlarmNode.h(29,7): message : see declaration of 'AlarmNode::setbackendAlarmClock'
-D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\ScreenHandler.cpp(123,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  ToggleSwitch.cpp
   Generating Code...
+  AlarmProject V0.1.vcxproj -> D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\AlarmProject V0.1.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
