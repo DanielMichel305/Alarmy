@@ -1,38 +1,11 @@
-﻿  Main.cpp
-D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(21,64): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(21,47): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(27,70): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\Main.cpp(27,50): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+﻿  ScreenHandler.cpp
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\ScreenHandler.cpp(127,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\ScreenHandler.cpp(127,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\ScreenHandler.cpp(147,44): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-  ToggleSwitch.cpp
-  Generating Code...
   AlarmProject V0.1.vcxproj -> D:\Programming\AlarmClockProj\AlarmProj V0.1\AlarmProject V0.1\x64\Debug\AlarmProject V0.1.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

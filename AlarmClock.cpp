@@ -9,6 +9,7 @@ void AlarmClock::setDaysToRing(int arr[])
 
 AlarmClock::AlarmClock()
 {
+	std::cout << "->NEW AlarmClock Created!\n ";
 }
 
 AlarmClock::AlarmClock(const AlarmClock& copyClock)

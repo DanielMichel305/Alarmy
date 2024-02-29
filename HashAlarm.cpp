@@ -21,7 +21,7 @@ void HashAlarm::insertQuadratic(long index, AlarmClock &alarm)
 		while (table[index].status != -1 && table[index].status != -2)
 		{
 			index += (quadSign * quadSign);
-			if (table[index].status == -1 && table[index].status == -2) table[index].clock = alarm;
+			if (table[index].status == -1 || table[index].status == -2) table[index].clock = alarm;
 			else
 			{
 				index -= (quadSign * quadSign);

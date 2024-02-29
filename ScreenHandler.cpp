@@ -121,6 +121,7 @@ void ScreenHandler::GenerateAlarmNode(tgui::GuiSFML& gui, HashAlarm Hmap)
 		std::shared_ptr<AlarmNode> alarm = std::make_shared<AlarmNode>();;
 		
 		alarm->setbackendAlarmClock(&Hmap.getAllAlarms().at(i).clock);
+		
 	
 		std::cout << "AlarmNode Generated\n";
 		alarm->setPosition(nodesCol*300, nodesRows * 50);		///REDO GRID RENDERING

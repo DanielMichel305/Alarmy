@@ -13,7 +13,7 @@ protected:
 	std::tm userTime_tm = {};
 	sf::SoundBuffer ringtoneBuffer;
 	sf::Sound ringtone;
-	long ClockLabelAsLong();
+	unsigned long ClockLabelAsLong();
 	bool isAlarmActive = false;
 	
 

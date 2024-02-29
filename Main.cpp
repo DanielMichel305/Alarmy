@@ -4,7 +4,21 @@
 #include "AlarmNode.h"
 #include "ScreenHandler.h"
 	
+void checkForAlarms(HashAlarm& clocks)
+{
 
+	for (int i = 0; i < clocks.getCapacity(); i++)
+	{
+		if (clocks.getElementIterator(i).clock.isTimeToRing() && !clocks.getElementIterator(i).clock.getringtoneActive())
+		{
+			clocks.getElementIterator(i).clock.activateRingtone();
+			clocks.getElementIterator(i).setisPlaying(true);
+		}
+		else if (!clocks.getElementIterator(i).clock.isTimeToRing()) {
+			clocks.getElementIterator(i).clock.stopRingtone();
+		}
+	}
+}
 
 
 int main() {
@@ -44,11 +58,23 @@ int main() {
 	
 	
 	AlarmClock alarm2;
-	alarm2.setAlarmTime(17, 10, 0);
+
+	alarm2.setAlarmTime(11, 49, 0);  //<---
 	alarm2.setDaysToRing(arr);
+	alarm2.setRingtone("Ringtones\\Radar.ogg");
+
+	AlarmClock alarm3;
+
+	alarm3.setAlarmTime(11, 55, 0);  //<---
+	alarm3.setDaysToRing(arr);
+	alarm3.setRingtone("Ringtones\\Radar.ogg");
+
+	
 
 	hmap.insertQuadratic(alarm1.hash()%hmap.getCapacity(), alarm1);
-	hmap.insertQuadratic(alarm2.hash() % hmap.getCapacity(), alarm2);
+	hmap.insertQuadratic(alarm2.hash()%hmap.getCapacity(), alarm2);
+	hmap.insertQuadratic(alarm3.hash() % hmap.getCapacity(), alarm3);
+
 
 	
 	screenHandle.GenerateAlarmNode(gui, hmap);
@@ -65,7 +91,7 @@ int main() {
 			gui.handleEvent(evt);
 		}
 
-		
+		checkForAlarms(hmap);
 		
 
 		win.clear();

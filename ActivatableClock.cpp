@@ -1,13 +1,14 @@
 #include "ActivatableClock.h"
 
 
-long ActivatableClock::ClockLabelAsLong()
+unsigned long ActivatableClock::ClockLabelAsLong()
 {
-	return 1;
+	unsigned long labelAsLong = 0;
 	for (char c : ClockLabel)
 	{
-		
+		labelAsLong += c;
 	}
+	return labelAsLong;
 }
 
 void ActivatableClock:: SetStopAlarmActive()
@@ -88,10 +89,12 @@ void ActivatableClock::setRingtone(std::string ringtonePath)
 	{
 		cerr << "Error!!!" << ringtonePath << "\n";
 	}
-	ringtone.setBuffer(ringtoneBuffer);
-	ringtone.setVolume(50);
-	ringtone.setLoop(true);
-	std::cout << "Ringtone Loaded Succesfully!\n";
+	else {
+		ringtone.setBuffer(ringtoneBuffer);
+		ringtone.setVolume(50);
+		ringtone.setLoop(true);
+		std::cout << "Ringtone Loaded Succesfully!\n";
+	}
 }
 
 void ActivatableClock::activateRingtone()
